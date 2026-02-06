@@ -79,6 +79,15 @@ export default function Projects() {
         <nav className="projects-nav">
           <Link to="/" className="back-link">← Home</Link>
         </nav>
+
+        <div className="header-description">
+          <h1 className="header-title">About Me</h1>
+          <p className="header-text">
+            Hi! I'm Makenna, a programmer and designer passionate about creating meaningful visual experiences.
+            I built this portfolio site to showcase my work in graphic design, web design, and visual art.
+            (This site is still a WIP, and best viewed on computer)
+          </p>
+        </div>
       </div>
 
       {/* Projects grid */}

@@ -43,6 +43,32 @@
   transform: translateY(-2px);
 }
 
+/* Header Description */
+.header-description {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  z-index: 100;
+  max-width: 600px;
+}
+
+.header-title {
+  font-family: "Lao MN", Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 1rem 0;
+  letter-spacing: -2px;
+}
+
+.header-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000;
+  margin: 0;
+}
+
 /* Projects Content */
 .projects-content {
   padding: 4rem 2rem;
