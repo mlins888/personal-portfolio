@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1437" height="638" viewBox="0 0 1437 638" fill="none">
+  <g opacity="0.83" filter="url(#filter0_n_1_6)">
+    <path d="M1149.41 514.298C1389.63 778.401 1567.25 544.603 1632.5 483.846C1636.69 465.578 1648.52 307.8 1662.29 -177.167C1676.07 -662.134 627.204 -332.288 456.075 -242.999C48.3688 -21.3811 -50.6011 -81.0249 21.7757 129.82C94.1526 340.664 510.562 563.217 628.868 451.836C750.641 337.191 909.199 250.194 1149.41 514.298Z" fill="url(#paint0_linear_1_6)"/>
+  </g>
+  <defs>
+    <filter id="filter0_n_1_6" x="0" y="-435.568" width="1662.43" height="1072.98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.55555558204650879 0.55555558204650879" stitchTiles="stitch" numOctaves="3" result="noise" seed="1781"/>
+      <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
+      <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+        <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+      </feComponentTransfer>
+      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped"/>
+      <feFlood flood-color="rgba(255, 255, 255, 0.25)" result="color1Flood"/>
+      <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"/>
+      <feMerge result="effect1_noise_1_6">
+        <feMergeNode in="shape"/>
+        <feMergeNode in="color1"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="paint0_linear_1_6" x1="692.066" y1="-275.17" x2="1193.34" y2="713.409" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3B73"/>
+      <stop offset="1" stop-color="#965BC3"/>
+    </linearGradient>
+  </defs>
+</svg>

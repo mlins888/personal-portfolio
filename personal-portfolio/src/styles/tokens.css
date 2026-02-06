@@ -1,0 +1,23 @@
+:root {
+  /* colors */
+  --color-bg: #ffffff;
+  --color-text: #111827;
+  --color-primary: #6366f1;
+  --color-muted: #6b7280;
+
+  /* typography */
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+
+  /* radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+}

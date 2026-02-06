@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'AMORIA';
+  src: url('../assets/fonts/AMORIA.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #E8B4D0 0%, #D4B8E8 40%, #B8A4E8 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Navigation */
+.nav {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  z-index: 100;
+}
+
+.nav-link {
+  font-family: "Lao MN", Georgia, serif;
+  font-size: 1.25rem;
+  color: #000;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Blob positioning */
+.blob {
+  position: absolute;
+  pointer-events: none;
+}
+
+.blob-wide {
+  top: 0%;
+  right: -5%;
+  width: 80%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.blob-tall {
+  top: 50%;
+  right: -15%;
+  width: 60%;
+  height: 70%;
+  opacity: 0.5;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  min-height: 130vh;
+  padding-bottom: 8rem;
+}
+
+.name {
+  font-family: "Lao MN", Georgia, serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 1rem 0;
+  letter-spacing: -5.12px;
+  line-height: normal;
+}
+
+.line {
+  width: 788px;
+  height: 1px;
+  background: #000;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'AMORIA', 'Playfair Display', Georgia, serif;
+  font-size: 300px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  opacity: 1;
+}
+
+.star-1 {
+  top: 36.95%;
+  left: 37.2rem;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(-4rem);
+}
+
+.star-2 {
+  top: 32.7%;
+  left: 53rem;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-1rem);
+}
+
+.star-3 {
+  top: 34.4%;
+  left: 41.5rem;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-2rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .title {
+    font-size: 21vw;
+  }
+
+  .name {
+    font-size: 4.5vw;
+    letter-spacing: -0.36vw;
+  }
+
+  .content {
+    padding-left: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .line {
+    width: 55vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .blob-wide {
+    width: 70%;
+    right: -10%;
+    top: -20%;
+  }
+
+  .blob-tall {
+    width: 45%;
+    right: 0;
+    top: 20%;
+  }
+
+  .content {
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .name {
+    font-size: 32px;
+    letter-spacing: -2.56px;
+  }
+
+  .title {
+    font-size: 20vw;
+  }
+
+  .line {
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+
+  .star-1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    left: 3rem;
+  }
+
+  .star-2 {
+    width: 0.6rem;
+    height: 0.6rem;
+    left: 5rem;
+  }
+
+  .star-3 {
+    width: 0.4rem;
+    height: 0.4rem;
+    left: 6.5rem;
+  }
+}
