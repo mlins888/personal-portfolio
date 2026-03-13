@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 import '../styles/projectDetail.css'
 
 // Import all project images
@@ -31,9 +32,22 @@ import folderImg from '../assets/proj_media/folder_cover.png'
 import brochure1Img from '../assets/proj_media/brochure_1.png'
 import brochure2Img from '../assets/proj_media/brochure_2.png'
 import coastersImg from '../assets/proj_media/coasters(sheet).png'
+import buildingImg from '../assets/proj_media/building.png'
+import gameCoverImg from '../assets/proj_media/game_cover.png'
+import birchTreeImg from '../assets/proj_media/Birch_Tree copy.PNG'
+import cabin3Img from '../assets/proj_media/Cabin3 copy.png'
+import house2Img from '../assets/proj_media/House2 copy.png'
+import mansion3Img from '../assets/proj_media/Mansion3 copy.png'
+import miscResourcesImg from '../assets/proj_media/Misc_Resources_Sprite_Sheet copy.PNG'
+import planksImg from '../assets/proj_media/Planks_Variations_Sprite_Sheet copy.PNG'
+import rawStoneImg from '../assets/proj_media/Raw_Stone_&_Sand_Sprite_Sheet copy.PNG'
 
 export default function ProjectDetail() {
   const { id } = useParams()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   // Helper function to check if file is a video
   const isVideo = (src) => {
@@ -84,6 +98,12 @@ export default function ProjectDetail() {
       description: "In 2025, I competed in a TSA graphic design competition and created a branding concept for a fictional restauraunt. My portfolio placed high enough in the regional competition to move on to the state competition, although I regrettably couldn't compete further due to funding limitations.",
       technologies: ["Procreate", "Canva", "Branding", "Marketing"],
       images: [folderImg, brochure1Img, brochure2Img, busCard1Img, busCard2Img, coastersImg, postCard1Img, postCard2Img]
+    },
+    8: {
+      title: "'Building Fever' Game Design Project",
+      description: "Designed all cartoon-style character and environment art for a hackathon-style game jam in under 72 hours. The game placed 6th out of 50+ entries.",
+      technologies: ["Game Design", "Unity", "Procreate"],
+      images: [buildingImg, gameCoverImg, cabin3Img, house2Img, mansion3Img, birchTreeImg, miscResourcesImg, planksImg, rawStoneImg]
     }
   }
 
@@ -93,7 +113,7 @@ export default function ProjectDetail() {
     return (
       <div className="project-detail">
         <div className="detail-header">
-          <Link to="/projects" className="back-button">← Back to Projects</Link>
+          <a href="/#projects" className="back-button">← Back to Projects</a>
           <h1>Project not found</h1>
         </div>
       </div>
@@ -103,7 +123,7 @@ export default function ProjectDetail() {
   return (
     <div className="project-detail">
       <div className="detail-header">
-        <Link to="/projects" className="back-button">← Back to Projects</Link>
+        <a href="/#projects" className="back-button">← Back to Projects</a>
       </div>
 
       <div className="detail-content">

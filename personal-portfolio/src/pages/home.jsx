@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import '../styles/home.css'
 import wideBlobSvg from '../assets/wide_blob.svg'
 import tallBlobSvg from '../assets/tall_blob.svg'
@@ -11,7 +10,7 @@ export default function Home() {
       <img src={tallBlobSvg} alt="" className="blob blob-tall" />
 
       <nav className="nav">
-        <Link to="/projects" className="nav-link">Projects</Link>
+        <a href="#projects" className="nav-link">Projects</a>
       </nav>
 
       <div className="content">
